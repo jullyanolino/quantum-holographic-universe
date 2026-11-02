@@ -115,8 +115,12 @@ A product of four distinct Majoranas is a single Pauli string, so each quartic t
 First-order Lie-Trotter with $r$ steps and $H = \sum_j h_j$:
 
 $$
-e^{-iHt} \approx \Big(\prod_j e^{-i h_j t/r}\Big)^r, \qquad
-\Big\|e^{-iHt} - \Big(\prod_j e^{-i h_j t/r}\Big)^r\Big\| \le \frac{t^2}{2r}\sum_{j<k}\big\|[h_j,h_k]\big\| .
+e^{-iHt} \approx \left(\prod_j e^{-i h_j t/r}\right)^r
+$$
+
+$$
+\left\|e^{-iHt} - \left(\prod_j e^{-i h_j t/r}\right)^r\right\|
+\leq \frac{t^2}{2r}\sum_{j<k}\left\|[h_j,h_k]\right\|.
 $$
 
 This repository implements one step ($r = 1$) to count gates. The error bound is stated for context and
