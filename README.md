@@ -119,8 +119,8 @@ e^{-iHt} \approx \left(\prod_j e^{-i h_j t/r}\right)^r
 $$
 
 $$
-\left\|e^{-iHt} - \left(\prod_j e^{-i h_j t/r}\right)^r\right\|
-\leq \frac{t^2}{2r}\sum_{j<k}\left\|[h_j,h_k]\right\|.
+|e^{-iHt} - (e^{-i h_1 t/r} e^{-i h_2 t/r} \cdots e^{-i h_L t/r})^r|
+\leq \frac{t^2}{2r}\sum_{j<k}|[h_j,h_k]|.
 $$
 
 This repository implements one step ($r = 1$) to count gates. The error bound is stated for context and
